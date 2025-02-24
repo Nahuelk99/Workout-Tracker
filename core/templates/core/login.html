@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login - Workout Tracker</title>
+    <style>
+      .login-container {
+        max-width: 400px;
+        margin: 100px auto;
+        padding: 20px;
+        text-align: center;
+      }
+      .google-button {
+        display: inline-block;
+        background-color: #4285f4;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Workout Tracker</h2>
+      <div class="login-buttons">
+        <a href="{% url 'social:begin' 'google-oauth2' %}"
+          >Iniciar sesión con Google</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

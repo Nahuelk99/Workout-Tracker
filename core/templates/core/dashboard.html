@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard - Workout Tracker</title>
+    <style>
+      .dashboard-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <div class="header">
+        <h1>Bienvenido, {{ user.first_name }}!</h1>
+        <a href="{% url 'login' %}">Cerrar sesión</a>
+      </div>
+
+      <h2>Tus planes de entrenamiento</h2>
+      <ul>
+        {% for plan in planes %}
+        <li>{{ plan.nombre }}</li>
+        {% empty %}
+        <li>No tienes planes de entrenamiento aún.</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
