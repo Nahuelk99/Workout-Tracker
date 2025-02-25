@@ -15,7 +15,7 @@
 
 ## 🛠 Tecnologías utilizadas
 
-* **Backend:** Django + Django REST Framework
+* **Backend:** Python + Django
 * **Base de datos:** PostgreSQL
 * **Frontend:** React
 * **Autenticación:** Firebase (Google OAuth)
