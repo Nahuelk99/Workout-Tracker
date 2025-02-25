@@ -19,7 +19,7 @@
 * **Base de datos:** PostgreSQL
 * **Frontend:** React
 * **Autenticación:** Firebase (Google OAuth)
-* **Despliegue:** Docker + Heroku
+* **Despliegue:** Docker + Heroku (A futuro)
 
 ## 📊 Modelos de Datos
 
